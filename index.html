@@ -11,32 +11,32 @@
 <meta property="og:url" content="https://hamza-zaid-wedding.netlify.app/">
 <meta name="theme-color" content="#0f0d0b">
 <style>
-:root{--bg:#0f0d0b;--panel:#17130f;--gold:#d9b56d;--gold2:#f2dfb0;--text:#f8f2e7;--muted:#d9ceb7;--line:rgba(217,181,109,.28);--shadow:0 14px 40px rgba(0,0,0,.32)}
+:root{--bg:#0f0d0b;--gold:#d9b56d;--gold2:#f2dfb0;--text:#f8f2e7;--muted:#d9ceb7;--line:rgba(217,181,109,.28);--shadow:0 12px 34px rgba(0,0,0,.30)}
 *{box-sizing:border-box}
 html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Tahoma,Arial,sans-serif;scroll-behavior:smooth}
-body{min-height:100vh;overflow-x:hidden;background:radial-gradient(circle at top,rgba(217,181,109,.075),transparent 28%),var(--bg)}
-.hero{width:100%;padding:6px 6px 0}
-.video-wrap{position:relative;width:100%;max-width:520px;margin:0 auto;border:1px solid var(--line);border-radius:22px;overflow:hidden;background:#000;box-shadow:var(--shadow)}
-video{display:block;width:100%;height:auto;max-height:none;object-fit:contain;background:#000;pointer-events:none}
-.sound-float{position:absolute;top:14px;left:14px;z-index:8;border:1px solid rgba(255,255,255,.22);background:rgba(0,0,0,.58);color:#fff;border-radius:999px;padding:9px 13px;font-size:13px;display:none;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);box-shadow:0 5px 18px rgba(0,0,0,.25)}
-.scroll-arrow{position:absolute;left:50%;bottom:18px;transform:translateX(-50%);z-index:7;width:54px;height:54px;border-radius:999px;border:1px solid rgba(242,223,176,.34);background:rgba(12,10,8,.28);display:flex;align-items:center;justify-content:center;text-decoration:none;color:var(--gold2);opacity:0;animation:arrowAppear .8s ease 2s forwards;backdrop-filter:blur(5px);-webkit-backdrop-filter:blur(5px)}
-.scroll-arrow::before,.scroll-arrow::after{content:"";position:absolute;width:15px;height:15px;border-right:3px solid currentColor;border-bottom:3px solid currentColor;transform:rotate(45deg)}
-.scroll-arrow::before{top:12px;animation:arrowPulse 1.8s ease-in-out infinite}
-.scroll-arrow::after{top:22px;opacity:.55;animation:arrowPulse 1.8s ease-in-out .18s infinite}
-@keyframes arrowAppear{to{opacity:1}}
-@keyframes arrowPulse{0%,100%{transform:translateY(-2px) rotate(45deg);opacity:.42}50%{transform:translateY(4px) rotate(45deg);opacity:1}}
-.locations{width:100%;padding:8px 6px 22px;scroll-margin-top:6px}
-.card{width:100%;max-width:520px;margin:0 auto;background:linear-gradient(180deg,rgba(255,255,255,.045),rgba(255,255,255,.018));border:1px solid var(--line);border-radius:22px;padding:22px 14px;box-shadow:var(--shadow)}
+body{min-height:100vh;overflow-x:hidden;background:radial-gradient(circle at top,rgba(217,181,109,.07),transparent 27%),var(--bg)}
+.hero{width:100%;padding:4px 4px 0}
+.video-wrap{position:relative;width:100%;max-width:540px;margin:0 auto;border:1px solid var(--line);border-radius:15px;overflow:hidden;background:#000;box-shadow:var(--shadow)}
+video{display:block;width:100%;height:auto;object-fit:contain;background:#000;pointer-events:none}
+.sound-float{position:absolute;top:10px;left:10px;z-index:9;border:1px solid rgba(255,255,255,.22);background:rgba(0,0,0,.62);color:#fff;border-radius:999px;padding:9px 13px;font-size:13px;display:none;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);box-shadow:0 5px 18px rgba(0,0,0,.28)}
+.scroll-arrow{position:absolute;left:50%;bottom:16px;transform:translateX(-50%) translateY(8px);z-index:8;width:48px;height:48px;border-radius:999px;border:1px solid rgba(242,223,176,.42);background:rgba(10,8,6,.34);display:flex;align-items:center;justify-content:center;text-decoration:none;color:var(--gold2);opacity:0;visibility:hidden;transition:opacity .45s ease,transform .45s ease,visibility .45s ease;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);box-shadow:0 7px 22px rgba(0,0,0,.24)}
+.scroll-arrow.show{opacity:1;visibility:visible;transform:translateX(-50%) translateY(0)}
+.scroll-arrow::before,.scroll-arrow::after{content:"";position:absolute;width:13px;height:13px;border-right:3px solid currentColor;border-bottom:3px solid currentColor;transform:rotate(45deg)}
+.scroll-arrow::before{top:10px;animation:arrowPulse 1.65s ease-in-out infinite}
+.scroll-arrow::after{top:20px;opacity:.55;animation:arrowPulse 1.65s ease-in-out .17s infinite}
+@keyframes arrowPulse{0%,100%{transform:translateY(-2px) rotate(45deg);opacity:.40}50%{transform:translateY(4px) rotate(45deg);opacity:1}}
+.locations{width:100%;padding:4px 4px 18px;scroll-margin-top:4px}
+.card{width:100%;max-width:540px;margin:0 auto;background:linear-gradient(180deg,rgba(255,255,255,.045),rgba(255,255,255,.018));border:1px solid var(--line);border-radius:15px;padding:20px 13px;box-shadow:var(--shadow)}
 .title{color:var(--gold2);text-align:center;font-size:29px;margin:0 0 7px}
-.subtitle{text-align:center;color:var(--muted);font-size:14px;line-height:1.75;margin:0 0 18px}
-.loc{border:1px solid rgba(217,181,109,.20);background:rgba(255,255,255,.036);border-radius:18px;padding:17px 14px;margin-bottom:12px}
+.subtitle{text-align:center;color:var(--muted);font-size:14px;line-height:1.75;margin:0 0 17px}
+.loc{border:1px solid rgba(217,181,109,.20);background:rgba(255,255,255,.036);border-radius:15px;padding:16px 13px;margin-bottom:11px}
 .loc h3{margin:0 0 7px;color:var(--gold2);font-size:21px}
 .loc p{margin:0 0 13px;color:var(--muted);font-size:13px;line-height:1.7}
-.btn{width:100%;border:1px solid var(--line);border-radius:13px;min-height:48px;padding:12px 14px;text-decoration:none;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:15px}
+.btn{width:100%;border:1px solid var(--line);border-radius:12px;min-height:48px;padding:12px 14px;text-decoration:none;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:15px}
 .primary{background:linear-gradient(180deg,#f0d08b,#d9b56d);color:#21170c}
 .secondary{margin-top:4px;background:rgba(255,255,255,.045);color:var(--text)}
-.footer{text-align:center;color:var(--muted);font-size:13px;margin-top:14px}
-@media(max-width:380px){.hero,.locations{padding-left:4px;padding-right:4px}.video-wrap,.card{border-radius:18px}.card{padding:19px 12px}.title{font-size:26px}.scroll-arrow{width:48px;height:48px;bottom:14px}}
+.footer{text-align:center;color:var(--muted);font-size:13px;margin-top:13px}
+@media(max-width:380px){.hero,.locations{padding-left:3px;padding-right:3px}.video-wrap,.card{border-radius:13px}.card{padding:18px 11px}.title{font-size:26px}.scroll-arrow{width:44px;height:44px;bottom:12px}}
 </style>
 </head>
 <body>
@@ -46,7 +46,7 @@ video{display:block;width:100%;height:auto;max-height:none;object-fit:contain;ba
       <source src="invite_web.mp4" type="video/mp4">
     </video>
     <button class="sound-float" id="sound" type="button">🔊 تشغيل الصوت</button>
-    <a class="scroll-arrow" href="#locations" aria-label="انتقل إلى مواقع الحفل"></a>
+    <a class="scroll-arrow" id="scrollArrow" href="#locations" aria-label="انتقل إلى مواقع الحفل"></a>
   </div>
 </section>
 <section class="locations" id="locations">
@@ -70,6 +70,7 @@ video{display:block;width:100%;height:auto;max-height:none;object-fit:contain;ba
 <script>
 const v=document.getElementById('video');
 const s=document.getElementById('sound');
+const a=document.getElementById('scrollArrow');
 async function startVideo(){
   try{
     v.muted=false;v.volume=1;await v.play();s.style.display='none';
@@ -79,11 +80,21 @@ async function startVideo(){
     s.style.display='block';
   }
 }
+function updateArrow(){
+  if(!Number.isFinite(v.duration)||!v.duration)return;
+  const remaining=v.duration-v.currentTime;
+  if(remaining<=6||v.ended){a.classList.add('show');}
+  else{a.classList.remove('show');}
+}
 window.addEventListener('DOMContentLoaded',startVideo);
 window.addEventListener('pageshow',startVideo);
 document.addEventListener('visibilitychange',()=>{if(!document.hidden&&v.paused)startVideo();});
+v.addEventListener('timeupdate',updateArrow);
+v.addEventListener('loadedmetadata',updateArrow);
+v.addEventListener('ended',()=>a.classList.add('show'));
 s.addEventListener('click',async()=>{v.muted=false;v.volume=1;try{await v.play();s.style.display='none';}catch(e){}});
 document.addEventListener('pointerdown',()=>{if(v.muted){v.muted=false;v.volume=1;v.play().then(()=>s.style.display='none').catch(()=>{});}}, {once:true});
+a.addEventListener('click',()=>document.getElementById('locations').scrollIntoView({behavior:'smooth'}));
 </script>
 </body>
 </html>
