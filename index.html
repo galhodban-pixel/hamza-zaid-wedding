@@ -8,30 +8,72 @@
 <meta property="og:title" content="دعوة زفاف حمزة وزيد 💍">
 <meta property="og:description" content="نتشرف بحضوركم ومشاركتكم فرحتنا">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://galhodban-pixel.github.io/hamza-zaid-wedding/">
+<meta property="og:url" content="https://hamza-zaid-wedding.netlify.app/">
 <meta name="theme-color" content="#0f0d0b">
 <style>
-:root{--bg:#0f0d0b;--gold:#d9b56d;--gold2:#f2dfb0;--text:#f8f2e7;--muted:#d9ceb7;--line:rgba(217,181,109,.25);--shadow:0 20px 60px rgba(0,0,0,.38)}
-*{box-sizing:border-box}html,body{margin:0;background:var(--bg);color:var(--text);font-family:Tahoma,Arial,sans-serif;scroll-behavior:smooth}body{min-height:100vh}.page{min-height:100svh;width:100%;display:flex;align-items:center;justify-content:center;padding:16px;position:relative;overflow:hidden}.page:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 0,rgba(217,181,109,.1),transparent 34%),radial-gradient(circle at 50% 100%,rgba(217,181,109,.06),transparent 28%);pointer-events:none}.wrap{width:min(100%,470px);position:relative;z-index:1}.brand{text-align:center;color:var(--gold2);font-size:14px;margin-bottom:10px;letter-spacing:.5px}.shell,.card{background:linear-gradient(180deg,rgba(255,255,255,.045),rgba(255,255,255,.015));border:1px solid var(--line);border-radius:26px;box-shadow:var(--shadow);backdrop-filter:blur(4px)}.shell{padding:10px;position:relative}video{display:block;width:100%;aspect-ratio:9/16;object-fit:cover;background:#000;border-radius:18px;pointer-events:none}.actions{display:flex;gap:10px;margin-top:12px;flex-wrap:wrap}.btn{border:1px solid var(--line);border-radius:14px;min-height:48px;padding:12px 14px;text-decoration:none;display:flex;align-items:center;justify-content:center;font-weight:700;cursor:pointer;font-size:15px;flex:1}.primary{background:linear-gradient(180deg,#f0d08b,#d9b56d);color:#21170c}.secondary{background:rgba(255,255,255,.045);color:var(--text)}.sound-float{position:absolute;left:20px;bottom:74px;z-index:5;border:1px solid rgba(255,255,255,.25);background:rgba(0,0,0,.58);color:#fff;border-radius:999px;padding:9px 13px;font-size:13px;display:none;backdrop-filter:blur(7px)}.card{padding:22px 18px}.title{color:var(--gold2);text-align:center;font-size:29px;margin:0 0 8px}.subtitle{text-align:center;color:var(--muted);font-size:14px;line-height:1.8;margin:0 0 20px}.loc{border:1px solid rgba(217,181,109,.18);background:rgba(255,255,255,.035);border-radius:20px;padding:18px 16px;margin-bottom:14px}.loc h3{margin:0 0 8px;color:var(--gold2);font-size:21px}.loc p{margin:0 0 14px;color:var(--muted);font-size:13px;line-height:1.75}.footer{text-align:center;color:var(--muted);font-size:13px;margin-top:14px}@media(max-width:380px){.page{padding:10px}.title{font-size:25px}.btn{font-size:14px}}
+:root{--bg:#0f0d0b;--panel:#17130f;--gold:#d9b56d;--gold2:#f2dfb0;--text:#f8f2e7;--muted:#d9ceb7;--line:rgba(217,181,109,.28);--shadow:0 14px 40px rgba(0,0,0,.32)}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Tahoma,Arial,sans-serif;scroll-behavior:smooth}
+body{min-height:100vh;overflow-x:hidden;background:radial-gradient(circle at top,rgba(217,181,109,.075),transparent 28%),var(--bg)}
+.hero{width:100%;padding:6px 6px 0}
+.video-wrap{position:relative;width:100%;max-width:520px;margin:0 auto;border:1px solid var(--line);border-radius:22px;overflow:hidden;background:#000;box-shadow:var(--shadow)}
+video{display:block;width:100%;height:auto;max-height:none;object-fit:contain;background:#000;pointer-events:none}
+.sound-float{position:absolute;top:14px;left:14px;z-index:8;border:1px solid rgba(255,255,255,.22);background:rgba(0,0,0,.58);color:#fff;border-radius:999px;padding:9px 13px;font-size:13px;display:none;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);box-shadow:0 5px 18px rgba(0,0,0,.25)}
+.scroll-arrow{position:absolute;left:50%;bottom:18px;transform:translateX(-50%);z-index:7;width:54px;height:54px;border-radius:999px;border:1px solid rgba(242,223,176,.34);background:rgba(12,10,8,.28);display:flex;align-items:center;justify-content:center;text-decoration:none;color:var(--gold2);opacity:0;animation:arrowAppear .8s ease 2s forwards;backdrop-filter:blur(5px);-webkit-backdrop-filter:blur(5px)}
+.scroll-arrow::before,.scroll-arrow::after{content:"";position:absolute;width:15px;height:15px;border-right:3px solid currentColor;border-bottom:3px solid currentColor;transform:rotate(45deg)}
+.scroll-arrow::before{top:12px;animation:arrowPulse 1.8s ease-in-out infinite}
+.scroll-arrow::after{top:22px;opacity:.55;animation:arrowPulse 1.8s ease-in-out .18s infinite}
+@keyframes arrowAppear{to{opacity:1}}
+@keyframes arrowPulse{0%,100%{transform:translateY(-2px) rotate(45deg);opacity:.42}50%{transform:translateY(4px) rotate(45deg);opacity:1}}
+.locations{width:100%;padding:8px 6px 22px;scroll-margin-top:6px}
+.card{width:100%;max-width:520px;margin:0 auto;background:linear-gradient(180deg,rgba(255,255,255,.045),rgba(255,255,255,.018));border:1px solid var(--line);border-radius:22px;padding:22px 14px;box-shadow:var(--shadow)}
+.title{color:var(--gold2);text-align:center;font-size:29px;margin:0 0 7px}
+.subtitle{text-align:center;color:var(--muted);font-size:14px;line-height:1.75;margin:0 0 18px}
+.loc{border:1px solid rgba(217,181,109,.20);background:rgba(255,255,255,.036);border-radius:18px;padding:17px 14px;margin-bottom:12px}
+.loc h3{margin:0 0 7px;color:var(--gold2);font-size:21px}
+.loc p{margin:0 0 13px;color:var(--muted);font-size:13px;line-height:1.7}
+.btn{width:100%;border:1px solid var(--line);border-radius:13px;min-height:48px;padding:12px 14px;text-decoration:none;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:15px}
+.primary{background:linear-gradient(180deg,#f0d08b,#d9b56d);color:#21170c}
+.secondary{margin-top:4px;background:rgba(255,255,255,.045);color:var(--text)}
+.footer{text-align:center;color:var(--muted);font-size:13px;margin-top:14px}
+@media(max-width:380px){.hero,.locations{padding-left:4px;padding-right:4px}.video-wrap,.card{border-radius:18px}.card{padding:19px 12px}.title{font-size:26px}.scroll-arrow{width:48px;height:48px;bottom:14px}}
 </style>
 </head>
 <body>
-<section class="page" id="invitation"><div class="wrap"><div class="brand">دعوة زفاف حمزة وزيد 💍</div><div class="shell">
-<video id="video" autoplay playsinline webkit-playsinline preload="auto" disablepictureinpicture controlslist="nodownload noplaybackrate nofullscreen">
-<source src="invite_web.mp4" type="video/mp4">
-</video>
-<button class="sound-float" id="sound" type="button">🔊 تشغيل الصوت</button>
-<div class="actions"><a class="btn secondary" href="#locations">المواقع</a></div>
-</div></div></section>
-<section class="page" id="locations"><div class="wrap"><div class="card"><h1 class="title">مواقع الحفل</h1><p class="subtitle">اضغط على الموقع المطلوب لفتحه مباشرة في Google Maps</p>
-<div class="loc"><h3>📍 موقع الصالة</h3><p>موقع قاعات الحفل.</p><a class="btn primary" href="https://maps.app.goo.gl/VLUqps6evij3enRR8?g_st=ic" target="_blank" rel="noopener">فتح موقع الصالة</a></div>
-<div class="loc"><h3>🏠 موقع باب البيت</h3><p>موقع بيت والد العريسين.</p><a class="btn primary" href="https://maps.app.goo.gl/gy4WJ1peDZB5sDdSA?g_st=ic" target="_blank" rel="noopener">فتح موقع باب البيت</a></div>
-<a class="btn secondary" href="#invitation">الرجوع إلى الدعوة</a><div class="footer">نتشرّف بحضوركم ومشاركتكم فرحتنا</div></div></div></section>
+<section class="hero" id="invitation">
+  <div class="video-wrap">
+    <video id="video" autoplay playsinline webkit-playsinline preload="auto" disablepictureinpicture controlslist="nodownload noplaybackrate nofullscreen">
+      <source src="invite_web.mp4" type="video/mp4">
+    </video>
+    <button class="sound-float" id="sound" type="button">🔊 تشغيل الصوت</button>
+    <a class="scroll-arrow" href="#locations" aria-label="انتقل إلى مواقع الحفل"></a>
+  </div>
+</section>
+<section class="locations" id="locations">
+  <div class="card">
+    <h1 class="title">مواقع الحفل</h1>
+    <p class="subtitle">اضغط على الموقع المطلوب لفتحه مباشرة في Google Maps</p>
+    <div class="loc">
+      <h3>📍 موقع الصالة</h3>
+      <p>موقع قاعات الحفل.</p>
+      <a class="btn primary" href="https://maps.app.goo.gl/VLUqps6evij3enRR8?g_st=ic" target="_blank" rel="noopener">فتح موقع الصالة</a>
+    </div>
+    <div class="loc">
+      <h3>🏠 موقع باب البيت</h3>
+      <p>موقع بيت والد العريسين.</p>
+      <a class="btn primary" href="https://maps.app.goo.gl/gy4WJ1peDZB5sDdSA?g_st=ic" target="_blank" rel="noopener">فتح موقع باب البيت</a>
+    </div>
+    <a class="btn secondary" href="#invitation">الرجوع إلى الدعوة</a>
+    <div class="footer">نتشرّف بحضوركم ومشاركتكم فرحتنا</div>
+  </div>
+</section>
 <script>
-const v=document.getElementById('video');const s=document.getElementById('sound');
+const v=document.getElementById('video');
+const s=document.getElementById('sound');
 async function startVideo(){
-  try{v.muted=false;v.volume=1;await v.play();s.style.display='none';}
-  catch(e){
+  try{
+    v.muted=false;v.volume=1;await v.play();s.style.display='none';
+  }catch(e){
     v.muted=true;
     try{await v.play();}catch(_){}
     s.style.display='block';
